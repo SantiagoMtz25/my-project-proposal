@@ -5,16 +5,10 @@ import TextHolder from './components/TextHolder';
 import phrasesProposal from './proposal.json';
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    const handleClick = () => {
-        setCount(count + 1);
-        // Pop up a screen with an animation of confetti at the background
-    
-    }
+    const [index, setIndex] = useState(0);
 
     return (
-        <div>
+        <div id='main-div'>
             <TextHolder textArray={phrasesProposal.phrases}></TextHolder>
 
         </div>

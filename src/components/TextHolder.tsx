@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TextHolder_module from './TextHolder.module.scss';
 
 interface TextHolderProps {
     textArray: string[];
@@ -18,10 +19,12 @@ const TextHolder: React.FC<TextHolderProps> = ({ textArray }) => {
     };
 
     return (
-        <div>
+        <div id='bdiv' className="divstyle">
             <p>{textArray[currentIndex]}</p>
-            <button id='b1' onClick={handlePrev}>Volver</button>
-            <button id='b1' onClick={handleNext}>Siguiente</button>
+            <div id='button-container'>
+                <button id='b1' onClick={handlePrev}>Volver</button>
+                <button id='b1' onClick={handleNext}>Siguiente</button>
+            </div>
         </div>
     );
 };
