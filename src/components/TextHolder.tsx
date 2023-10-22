@@ -1,5 +1,4 @@
 import React from 'react';
-import TextHolder_module from './TextHolder.module.scss';
 
 interface TextHolderProps {
     textArray: string[];
