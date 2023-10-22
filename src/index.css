@@ -41,6 +41,12 @@ button {
   font-family: 'Caveat', 'Source Code Pro', monospace;
   font-size: 2rem;
   margin: 0.625rem;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFD700;
+  transform: scale(1.05);
 }
 
 p {

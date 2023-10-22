@@ -1,10 +1,13 @@
 import React from 'react';
-import phrasesProposal from '../proposal.json';
 
-const SpecialPhrase: React.FC = () => {
+interface Props {
+  phrase: string;
+}
+
+const SpecialPhrase: React.FC<Props> = ({ phrase }) => {
     return (
         <div>
-            <p>{phrasesProposal.acceptphrase}</p>
+            <p>{phrase}</p>
         </div>
     );
 };
