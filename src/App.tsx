@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from './App.module.scss';
 import TextHolder from './components/TextHolder';
 import FinalCard from './components/FinalCard';
 import phrasesProposal from './proposal.json';
@@ -20,7 +19,7 @@ function App() {
     return (
         <div id='main-div'>
             {isLastPhrase ? (
-                <FinalCard index={index} text={phrasesProposal.finalphrase} />
+                <FinalCard text={phrasesProposal.finalphrase} />
             ) : (
                 <TextHolder textArray={phrasesProposal.phrases} onNext={handleNext} currentIndex={index} onPrev={handlePrev
                 } />
