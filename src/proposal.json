@@ -13,5 +13,8 @@
         "Siempre cuidar a tu corazón.",
         "Hablado mi corazón, te quiero preguntar si..."
     ],
-    "phrasecount": 12
+    "phrasecount": 12,
+    "finalphrase": "¿Puedo ser tu novio?",
+    "acceptphrase": "Te quiero mucho",
+    "rejectphrase": "Bueno, no esperaba que dijeras que no"
 }

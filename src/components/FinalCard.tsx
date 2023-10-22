@@ -1,27 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Confetti from 'react-confetti'; // Import the react-confetti library
 import Button from './Button';
-import jsonData from '../proposal.json';
+import { useWindowSize } from 'react-use'; // react-use library to get window size for confetti
+import SpecialPhrase from './SpecialPhrase';
 
 interface FinalCardProps {
-    index: number;
+  text: string;
+  index: number; // Please note, you're not using 'index' prop in this component. Consider removing it if it's not needed.
 }
 
-const FinalCard: React.FC<FinalCardProps> = ({ index }) => {
-    const { text } = JSON.parse(JSON.stringify(jsonData)).phrases[index];
+const FinalCard: React.FC<FinalCardProps> = ({ text }) => {
+  const { width, height } = useWindowSize(); // Get the size of the window
+  const [showConfetti, setShowConfetti] = useState(false); // State to control the display of confetti and the special phrase
 
-    const handleButtonClick = () => {
-        // Will display a message depending on which button was clicked
-    }
+  const handleYesClick = () => {
+    setShowConfetti(true); // Show confetti and the special phrase
+  };
 
-    return (
-        <div className="card">
-            <p>{text}</p>
-            <div className="button-container">
-                <Button label='Si' onClick={handleButtonClick}></Button>
-                <Button label='No' onClick={handleButtonClick}></Button>
-            </div>
-        </div>
-    );
+  const handleNoClick = () => {
+    setShowConfetti(false); // Hide confetti and the special phrase
+  };
+
+  return (
+    <div>
+      {showConfetti && (
+        <>
+          <Confetti width={width} height={height} numberOfPieces={450} />
+          <SpecialPhrase />
+        </>
+      )}
+
+      <p>{text}</p>
+      <div id="button-container">
+        <Button label='Si' onClick={handleYesClick} />
+        <Button label='No' onClick={handleNoClick} />
+      </div>
+    </div>
+  );
 };
 
 export default FinalCard;
