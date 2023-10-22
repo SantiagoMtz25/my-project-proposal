@@ -5,11 +5,17 @@
         "Me siento muy afortunado de que formes parte de mi vida.",
         "Es un bonito regalo poder compartir contigo y que tu compartas conmigo.",
         "Como describo algo tan especial, tan latente, tan único, algo tan nuestro.",
-        "Quiero que sepas que te quiero mucho, que cuando te veo se dispara mi corazón, que eres muy importante para mí.",
+        "Quiero que sepas que te quiero mucho,",
+        "que cuando te veo se acelera mi corazón,",
+        "que eres muy importante para mí.",
         "Mereces todo lo mejor porque eres maravillosa.",
         "Me esforzaré siempre por que construyamos algo lindo y especial juntos.",
-        "Siempre cuidar a tu corazón.",
-        "Hablado mi corazón, te quiero preguntar si...",
-        "¿Puedo ser tu novio?"
-    ]
+        "Y siempre cuidar a tu corazón.",
+        "Hablado mi corazón, te quiero preguntar si..."
+    ],
+    "phrasecount": 12,
+    "finalphrase": "Luisa Jimena ¿Puedo ser tu novio?",
+    "acceptphrase": "Te quiero muchísimo Luisa", 
+    "deque": "¿Que de que?",
+    "rejectphrase": "¿Segura, verdad?"
 }
