@@ -1,7 +1,7 @@
 import React from 'react';
 
 type ButtonProps = {
-    label: 'Si' | 'No';
+    label: 'Si' | 'No' | 'Empezar';
     onClick: () => void;
 };
 
