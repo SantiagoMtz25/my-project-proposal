@@ -23,21 +23,21 @@ function App() {
         setShowContent(true);
     };
 
-        return (
-            <div id='main-div'>
-                {showContent ? (
-                    isLastPhrase ? (
-                        <FinalCard text={phrasesProposal.finalphrase} />
-                    ) : (
-                        <TextHolder textArray={phrasesProposal.phrases} onNext={handleNext} currentIndex={index} onPrev={handlePrev} />
-                    )
+    return (
+        <div id='main-div'>
+            {showContent ? (
+                isLastPhrase ? (
+                    <FinalCard text={phrasesProposal.finalphrase} />
                 ) : (
-                    <div className="animate__animated animate__heartBeat">
-                        <Button label="Empezar" onClick={startContent} />
-                    </div>
-                )}
-            </div>
-        );
-    }
+                    <TextHolder textArray={phrasesProposal.phrases} onNext={handleNext} currentIndex={index} onPrev={handlePrev} />
+                )
+            ) : (
+                <div className="animate__animated animate__heartBeat">
+                    <Button label="Empezar" onClick={startContent} />
+                </div>
+            )}
+        </div>
+    );
+}
 
-    export default App;
+export default App;

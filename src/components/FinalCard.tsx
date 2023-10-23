@@ -5,7 +5,7 @@ import { useWindowSize } from 'react-use'; // react-use library to get window si
 import SpecialPhrase from './SpecialPhrase';
 import phrasesProposal from '../proposal.json';
 import maybeImage from './quizas.jpg';
-
+import 'animate.css';
 
 interface FinalCardProps {
     text: string;
@@ -27,7 +27,7 @@ const FinalCard: React.FC<FinalCardProps> = ({ text }) => {
 
     const handleNoClick = () => {
         setShowConfetti(false); // Hide confetti and the special phrase
-        alert('Okay perdón... no importa, yo te quiero igual')
+        alert(JSON.stringify(phrasesProposal.rejectphrase));
     };
 
     useEffect(() => {
