@@ -3,20 +3,21 @@
         "Hay algo que te he querido decir...",
         "Debes de saber que eres una persona hermosa.",
         "Me siento muy afortunado de que formes parte de mi vida.",
-        "Es un bonito regalo poder compartir contigo y que tu compartas conmigo.",
-        "Como describo algo tan especial, tan latente, tan único, algo tan nuestro.",
+        "Es un bonito regalo de la vida poder compartir contigo y que tu compartas conmigo.",
+        "Estar contigo se siente tan especial, tan latente, tan único.",
         "Quiero que sepas que te quiero mucho,",
         "que cuando te veo se acelera mi corazón,",
         "que me pierdo en la belleza de tus ojos,",
+        "que me pareces increíble y",
         "que eres muy importante para mí.",
         "Mereces todo lo mejor porque eres maravillosa.",
         "Me esforzaré siempre por que construyamos algo lindo y especial juntos.",
         "Y siempre cuidar a tu corazón.",
         "Hablado mi corazón, te quiero preguntar si..."
     ],
-    "phrasecount": 13,
+    "phrasecount": 14,
     "finalphrase": "Luisa Jimena ¿Puedo ser tu novio?",
-    "acceptphrase": "Te quiero muchísimo Luisa", 
+    "acceptphrase": "Te quiero muchísimo", 
     "deque": "¿Que de que?",
-    "rejectphrase": "¿Segura, verdad?"
+    "rejectphrase": "Okay perdón... no importa, yo te quiero igual"
 }
