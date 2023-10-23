@@ -3,6 +3,7 @@ import TextHolder from './components/TextHolder';
 import FinalCard from './components/FinalCard';
 import phrasesProposal from './proposal.json';
 import Button from './components/Button';
+import 'animate.css';
 
 function App() {
     const totalPhrases = phrasesProposal.phrasecount;
@@ -31,7 +32,9 @@ function App() {
                         <TextHolder textArray={phrasesProposal.phrases} onNext={handleNext} currentIndex={index} onPrev={handlePrev} />
                     )
                 ) : (
-                    <Button label='Empezar' onClick={startContent} />
+                    <div className="animate__animated animate__heartBeat">
+                        <Button label="Empezar" onClick={startContent} />
+                    </div>
                 )}
             </div>
         );

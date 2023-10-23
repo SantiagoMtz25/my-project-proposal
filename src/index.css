@@ -5,6 +5,10 @@ html, body {
   margin: 0;
 }
 
+:root {
+  --animate-duration: 2s;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -24,6 +28,22 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 3rem 5rem;
+  border: 2px solid #FFD700;
+  border-radius: 0.625rem;
+  animation: border-pulse 2s infinite;
+  }
+
+@keyframes border-pulse {
+  0% {
+    border-color: #FFD700;
+  }
+  50% {
+    border-color: #FF9090;
+  }
+  100% {
+    border-color: #FFD900;
+  }
 }
 
 .divstyle {
@@ -84,4 +104,20 @@ p {
   height: 100%;
   pointer-events: none;
   z-index: 1;
+}
+
+img {
+  height: 3.9rem;
+  width: 5.5rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem;
+  transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.animate__animated.animate__heartBeat {
+  --animation-duration: 2s;
 }

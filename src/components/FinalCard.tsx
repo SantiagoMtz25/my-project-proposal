@@ -4,6 +4,7 @@ import Button from './Button';
 import { useWindowSize } from 'react-use'; // react-use library to get window size for confetti
 import SpecialPhrase from './SpecialPhrase';
 import phrasesProposal from '../proposal.json';
+import maybeImage from './quizas.jpg';
 
 
 interface FinalCardProps {
@@ -15,13 +16,18 @@ const FinalCard: React.FC<FinalCardProps> = ({ text }) => {
     const [showConfetti, setShowConfetti] = useState(false); // State to control the display of confetti and the special phrase
     const [showFirstPhrase, setShowFirstPhrase] = useState(false);
     const [showSecondPhrase, setShowSecondPhrase] = useState(false);
-    
+
     const handleYesClick = () => {
         setShowConfetti(true); // Show confetti and the special phrase
     };
 
+    const handleImageClick = () => {
+        handleNoClick();
+    };
+
     const handleNoClick = () => {
         setShowConfetti(false); // Hide confetti and the special phrase
+        alert('Okay perdón... no importa, yo te quiero igual')
     };
 
     useEffect(() => {
@@ -63,8 +69,15 @@ const FinalCard: React.FC<FinalCardProps> = ({ text }) => {
                     <>
                         <p>{text}</p>
                         <div id="button-container">
-                            <Button label='Si' onClick={handleYesClick} />
-                            <Button label='No' onClick={handleNoClick} />
+                            <div className='animate__animated animate__heartBeat'>
+                                <Button label='Si' onClick={handleYesClick} />
+                            </div>
+                            <img 
+                                src={maybeImage} 
+                                alt="Quizas" 
+                                onClick={handleImageClick} 
+                                style={{ cursor: 'pointer' }} 
+                            />  
                         </div>
                     </>
                 )}
